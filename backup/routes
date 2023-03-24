@@ -1,0 +1,32 @@
+"""from src.blueprints.list_users_endpoint import blueprint_list_users as ListUsers
+from src.blueprints.login_endpoint import blueprint_login  as Login
+from src.blueprints.register_endpoint import blueprint_register as Register
+from src.blueprints.health_chech_endpoint import blueprint_health_check as HealthCheck
+
+
+
+def routes(app):
+    app.add('/api/v1/health_check', view_func=HealthCheck)
+    app.add_url_rule('/api/v1/register', view_func=Register)
+    app.add_url_rule('/api/v1/login', view_func=Login)
+    app.add_url_rule('/api/v1/list_users', view_func=ListUsers)
+
+
+def initialize_routes(app):
+    app.add_resource(HealthCheck, '/api/v1/health_check')
+    app.add_resource(Register, '/api/v1/register')
+    app.add_resource(Login, '/api/v1/login')
+    app.add_resource(ListUsers, '/api/v1/list_users')"""
+
+
+#orjinal routes.py
+"""from src.blueprints.list_users_endpoint import blueprint_list_users as ListUsers
+from src.blueprints.login_endpoint import blueprint_login as Login
+from src.blueprints.health_chech_endpoint import blueprint_health_check as HealthCheck
+from src.blueprints.register_endpoint import blueprint_register as Register
+
+def initalize_routes(api):
+    api.register_blueprint(HealthCheck,url_prefix= '/api/v1/health_check')
+    api.register_blueprint(Register, url_prefix='/api/v1/register')
+    api.register_blueprint(Login,url_prefix= '/api/v1/login')
+    api.register_blueprint(ListUsers,url_prefix= '/api/v1/list_users')"""
